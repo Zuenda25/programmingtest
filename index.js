@@ -3,14 +3,15 @@ const bodyParser = require('body-parser');
 const db = require('./queries');
 const cors = require("cors");
 const app = express();
-const port = 3000;
+
+var port = process.env.PORT || 8080;
 
 const path = __dirname + '/app/views/';
 
 app.use(express.static(path));
 
 var corsOptions = {
-  origin: "http://localhost:3000"
+  origin: `http://localhost:${port}`
 };
 
 app.use(cors(corsOptions));
