@@ -1,5 +1,5 @@
 {
-  "name": "app-backend",
+  "name": "zuenda",
   "version": "1.0.0",
   "description": "Backend for Programming Test Apps",
   "main": "index.js",
